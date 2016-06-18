@@ -1,21 +1,21 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #000000;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #ffffff;
 }
 a:hover {
   color: #6633ff;
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: yellowgreen;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -52,12 +52,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: yellow
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/acoustic guitar.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -83,10 +83,10 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
-  color: yellow;
+  color: #FFD700;
 }
 .card {
   margin: 30px;
@@ -99,7 +99,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #8B4513;
 }
 
 ul.skills {
@@ -117,7 +117,7 @@ ul.skills {
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #B8860B;
 }
 
 footer {
@@ -167,12 +167,39 @@ a.social:hover {
   clear: both;
 }
 
+/* Contact Page */
+
+
+ul.contact {
+  list-style: none;
+}
+
+
+ul.contact a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+
+ul.contact li.phone a {
+  background-image: url('images/phone.png');
+}
+
+ul.contact li.mail a {
+  background-image: url('images/mail.png');
+}
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +231,3 @@ a.social:hover {
   }
 
 }
-
